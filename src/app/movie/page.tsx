@@ -74,7 +74,7 @@ const MoviePage: NextPage = () => {
       <motion.div
         layoutId={`item-${id}`}
         transition={{ duration: 0.25, ease: "easeInOut" }}
-        className="w-full relative aspect-[458/688] pointer-events-none"
+        className="w-full relative aspect-[458/688]"
       >
         <img src={movie.poster} alt="movie poster" />
       </motion.div>
@@ -91,7 +91,16 @@ const MoviePage: NextPage = () => {
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
           voluptas, dolor quae similique cupiditate mollitia, doloribus dicta
-          velit libero non eligendi fuga consequuntur.
+          velit libero non eligendi fuga consequuntur. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Aut veniam illum fugit consequuntur
+          similique ducimus alias ad perferendis, commodi aspernatur minus quae
+          ut eius sed nisi modi dolore voluptatibus illo? Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Quis voluptas, dolor quae similique
+          cupiditate mollitia, doloribus dicta velit libero non eligendi fuga
+          consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Aut veniam illum fugit consequuntur similique ducimus alias ad
+          perferendis, commodi aspernatur minus quae ut eius sed nisi modi
+          dolore voluptatibus illo?
         </p>
       </motion.div>
     </motion.div>

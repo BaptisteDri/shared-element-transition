@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { LayoutGroup } from "framer-motion";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -14,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={inter.className}>
-        <LayoutGroup>{children}</LayoutGroup>
+        <Suspense fallback={<div>Loading...</div>}>
+          <LayoutGroup>{children}</LayoutGroup>
+        </Suspense>
       </body>
     </html>
   );

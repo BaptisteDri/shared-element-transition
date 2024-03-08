@@ -19,6 +19,7 @@ export const ImageList = () => {
           onClick={() => router.push(`/movie?id=${i}`, { scroll: false })}
           whileTap={{ scale: 0.95 }}
           transition={{ duration: 0.25, ease: "easeInOut" }}
+          // @TODO: improve the way to handle zIndex
           style={{ zIndex: i === id ? 1 : 0 }}
         >
           <div className="relative aspect-[458/688] rounded-md overflow-hidden">
