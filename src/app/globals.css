@@ -2,6 +2,10 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+:root {
+  overscroll-behavior: none;
+}
+
 body {
   color: #f9f1f1;
   background: #1b1a1a;

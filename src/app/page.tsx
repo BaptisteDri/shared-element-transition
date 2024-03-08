@@ -1,8 +1,8 @@
-import { ImageList } from "@/app/ui/components/image-list";
+import { ImageList } from "@/ui/components/image-list";
 
 const Home = () => {
   return (
-    <main className="max-w-xl grid grid-cols-3 gap-4 mx-auto p-4">
+    <main className="overflow-hidden">
       <ImageList />
     </main>
   );

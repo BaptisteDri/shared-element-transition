@@ -1,11 +1,9 @@
-import Image from "next/image";
-
 type Movie = {
   poster: string;
   title: string;
 };
 
-const IMAGES_SRC: Movie[] = [
+export const IMAGES_SRC: Movie[] = [
   {
     poster:
       "https://www.themoviedb.org/t/p/w1280/rL1YQLqUtHK3HdQyenHvuOCuWzO.jpg",
@@ -67,14 +65,3 @@ const IMAGES_SRC: Movie[] = [
     title: "Les Affranchis",
   },
 ];
-
-export const ImageList = () => {
-  return IMAGES_SRC.map((src, i) => (
-    <div
-      className="relative aspect-[458/688] rounded-md overflow-hidden"
-      key={i}
-    >
-      <Image src={src.poster} alt="movie poster" fill />
-    </div>
-  ));
-};
