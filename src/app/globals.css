@@ -8,5 +8,6 @@
 
 body {
   color: #f9f1f1;
-  background: #1b1a1a;
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
 }

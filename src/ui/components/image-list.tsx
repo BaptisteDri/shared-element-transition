@@ -18,15 +18,21 @@ export const ImageList = () => {
           layoutId={`item-${i}`}
           onClick={() => router.push(`/movie?id=${i}`, { scroll: false })}
           whileTap={{ scale: 0.95 }}
-          transition={{ duration: 0.25, ease: "easeInOut" }}
+          transition={{
+            type: "spring",
+            stiffness: 700,
+            damping: 40,
+            duration: 0.3,
+          }}
           // @TODO: improve the way to handle zIndex
           style={{ zIndex: i === id ? 1 : 0 }}
         >
           <div className="relative aspect-[458/688] rounded-md overflow-hidden">
-            <img
+            <Image
               src={src.poster}
               alt="movie poster"
               className="pointer-events-none"
+              fill
             />
           </div>
         </motion.div>
